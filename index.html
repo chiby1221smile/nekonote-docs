@@ -333,6 +333,48 @@
     flex:none;
     margin-top:2px;
   }
+  .scope-box{
+    border-radius:14px 18px 16px 20px / 18px 14px 20px 16px;
+    padding:16px 18px;
+    margin:0 0 14px;
+  }
+  .scope-can{
+    background:var(--cream);
+  }
+  .scope-cannot{
+    background:#F4F3EF;
+  }
+  .scope-head{
+    font-family:"Yomogi","Hiragino Maru Gothic ProN",sans-serif;
+    font-size:1.05rem;
+    margin-bottom:8px;
+  }
+  .scope-box ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+  }
+  .scope-box li{
+    position:relative;
+    padding:6px 0 6px 26px;
+    font-size:0.93rem;
+    line-height:1.75;
+  }
+  .scope-can li::before{
+    content:"✓";
+    position:absolute;
+    left:2px;
+    top:6px;
+    font-weight:700;
+    color:#B8930F;
+  }
+  .scope-cannot li::before{
+    content:"—";
+    position:absolute;
+    left:2px;
+    top:6px;
+    color:var(--gray);
+  }
   .menu-card{
     background:#FFFFFF;
     border:1.5px solid #EFE6D8;
@@ -1310,31 +1352,28 @@
 
   <section id="scope">
     <h2>できること・できないこと</h2>
-    <div class="table-wrap">
-      <table>
-        <tr>
-          <th>できること</th>
-          <th>できないこと・条件</th>
-        </tr>
-        <tr>
-          <td>審査の表現チェック（薬機法・景表法・医療法など）</td>
-          <td>対応しているプラットフォームはCAMPFIREのみです</td>
-        </tr>
-        <tr>
-          <td>差し戻し対応（指摘の内容に合わせて、直し方をご相談します）</td>
-          <td>集客の代行や支援額の保証はしません。発信内容のアドバイスまでです</td>
-        </tr>
-        <tr>
-          <td>リターン設計のアイデア出し</td>
-          <td>審査の可否はCAMPFIRE側が決めるため、掲載を保証することはできません</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>オプションの料金は前金です。掲載不可・起案者都合の中止・完成後のキャンセルでは返金がありません</td>
-        </tr>
-      </table>
+
+    <div class="scope-box scope-can">
+      <div class="scope-head">できること</div>
+      <ul>
+        <li>審査に通る書き方のご相談（薬機法・景表法・医療法にあたる表現の言い換え）</li>
+        <li>差し戻しへの対応。指摘の内容に合わせて、直し方を一緒に考えます</li>
+        <li>リターンのアイデア出し</li>
+        <li>案件が見えた段階での企画案づくり</li>
+      </ul>
     </div>
-    <p class="callout">ご相談は、早い段階ほどできることが増えます。<strong>CAMPFIREへの申請が済んだあとの案件は、紐付けができないためお受けできません。</strong></p>
+
+    <div class="scope-box scope-cannot">
+      <div class="scope-head">できないこと</div>
+      <ul>
+        <li>集客の代行と、支援額の保証はしません。発信内容のご相談までです</li>
+        <li>掲載できるかどうかを保証することはできません。審査はCAMPFIREが決めます</li>
+        <li>CAMPFIRE以外のプラットフォームには対応していません</li>
+        <li>CAMPFIREへの申請が済んだあとの案件は、紐付けができないためお受けできません</li>
+      </ul>
+    </div>
+
+    <p class="note">※ オプションの料金は前金です。掲載できなかった場合、起案者さまのご都合で中止された場合、完成後のキャンセルでは返金がありません。</p>
   </section>
 
   <section id="flow">
