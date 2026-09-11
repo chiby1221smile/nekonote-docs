@@ -380,6 +380,70 @@
     color:var(--gray);
     margin:12px 0 0;
   }
+  .price-hero{
+    background:var(--cream);
+    border-radius:18px 22px 18px 22px / 22px 18px 22px 18px;
+    padding:22px 20px 20px;
+    text-align:center;
+    box-shadow:2px 3px 0 rgba(59,59,59,0.08);
+    margin:18px 0 16px;
+  }
+  .price-stack{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:4px;
+  }
+  .price-item{
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+  }
+  .price-name{
+    font-size:0.95rem;
+  }
+  .price-was{
+    font-size:1.05rem;
+    font-weight:700;
+    text-decoration:line-through;
+    text-decoration-color:#C9A227;
+    text-decoration-thickness:2px;
+    color:var(--gray);
+  }
+  .price-plus{
+    font-size:0.9rem;
+    color:var(--gray);
+  }
+  .price-sum{
+    margin-top:14px;
+    font-size:0.95rem;
+  }
+  .price-zero{
+    font-family:"Yomogi","Hiragino Maru Gothic ProN",sans-serif;
+    font-size:4rem;
+    line-height:1.1;
+    margin:2px 0 6px;
+  }
+  .price-yen{
+    font-size:1.6rem;
+    margin-left:2px;
+  }
+  .price-cond{
+    font-size:0.85rem;
+    color:var(--gray);
+  }
+  .plan-table td{
+    line-height:1.7;
+  }
+  .plan-table .rowhead{
+    background:var(--bg-soft);
+    white-space:nowrap;
+    font-weight:700;
+  }
+  .plan-table .free{
+    font-weight:700;
+    font-size:1.05rem;
+  }
   .case-grid{
     display:flex;
     flex-direction:column;
@@ -601,8 +665,7 @@
   </header>
 
   <section id="intro">
-    <p>クラウドファンディングは、資金を集める手段であると同時に、顧問先やお客様がやりたいことを<span class="mark">前に進める道具</span>として使えます。案件をCAMPFIREで山下に紐付けていただくと、相談サポート（33,000円）と基本サポート（55,000円）、あわせて<span class="mark">88,000円ぶんの内容が0円</span>になります。</p>
-    <p>案件が出たら、<span class="mark">CAMPFIREへ申請する前に</span>、山下へひと言ご連絡ください。申請が済んだあとは紐付けができないため、サポートをお受けできません。</p>
+    <p>クラウドファンディングは、資金を集める手段であると同時に、顧問先やお客様がやりたいことを<span class="mark">前に進める道具</span>として使えます。</p>
   </section>
 
   <section id="can-do">
@@ -685,116 +748,6 @@
     </div>
   </section>
 
-  <section id="case">
-    <h2>実際にあった案件</h2>
-
-    <div class="case-grid">
-      <a class="case-card" href="https://camp-fire.jp/projects/view/918085" target="_blank" rel="noopener">
-        <img class="case-thumb" src="images/case_izena.jpg" alt="伊是名島の民宿のプロジェクトページ">
-        <span class="badge">117%達成・2度目の挑戦</span>
-        <h3>沖縄の離島・伊是名島で、祖母から受け継いだ民宿を復活させたい！</h3>
-        <div class="case-figs"><b>1,175,500円</b><span>目標 1,000,000円</span><span>支援者 97人</span></div>
-        <p>1回目はご自身だけで挑戦され、目標に届きませんでした。その後にご依頼をいただき、2回目はサポートに入って117%で終えています。このあとの「利用者の声」に出てくる、末吉周平さまの案件です。</p>
-        <span class="case-link">CAMPFIREのページを見る</span>
-      </a>
-
-      <a class="case-card" href="https://camp-fire.jp/projects/view/667599" target="_blank" rel="noopener">
-        <img class="case-thumb" src="images/case_kureha.jpg" alt="呉羽キャンディのプロジェクトページ">
-        <span class="badge">149%達成</span>
-        <h3>ミニトマト「呉羽キャンディ」を広めたい</h3>
-        <div class="case-figs"><b>746,900円</b><span>目標 500,000円</span></div>
-        <p>「沢山の方から問い合わせを頂き、メディアにも取り上げられ、地方から全国まで認知されるキッカケとなりました」という声をいただきました。</p>
-        <span class="case-link">CAMPFIREのページを見る</span>
-      </a>
-
-      <a class="case-card" href="https://camp-fire.jp/projects/357909/view" target="_blank" rel="noopener">
-        <img class="case-thumb" src="images/case_kuromon.png" alt="黒門カルチャーファクトリーのプロジェクトページ">
-        <span class="badge">217%達成・山下自身の案件</span>
-        <h3>大人の秘密基地を存続させたい（黒門カルチャーファクトリー）</h3>
-        <div class="case-figs"><b>1,304,000円</b><span>目標 600,000円</span><span>支援者 256人</span></div>
-        <p>大阪・日本橋の地下にあるレンタルスペースです。コロナ禍で利用の予約が入らなくなり、家賃だけが出ていく状態になりました。3か月分の家賃を目標に、この場所を続けたいと呼びかけた案件です。リターンは知り合いの作品やセミナーばかりでしたが、256人が支援してくださいました。</p>
-        <span class="case-link">CAMPFIREのページを見る</span>
-      </a>
-    </div>
-  </section>
-
-  <section id="screening">
-    <h2>審査で止まるところ</h2>
-    <p>クラウドファンディングには審査があります。同じ企画でも、<span class="mark">書き方ひとつで止まってしまうこと</span>があります。よくあるのは、その方だけのためのお願いに見えてしまう書き方です。</p>
-
-    <div class="transform-box">
-      <div class="before">「自分のお店を出したいので、開店の資金を集めたい」</div>
-      <svg class="arrow-icon" viewBox="0 0 40 20" role="img" aria-label="変換の例">
-        <path filter="url(#rough)" d="M2 10 H32" stroke="#3B3B3B" stroke-width="2.4" stroke-linecap="round"/>
-        <path filter="url(#rough)" d="M24 4 L34 10 L24 16" fill="none" stroke="#3B3B3B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      <div class="after">「この街には、子ども連れで気兼ねなく過ごせる場所がありません。誰でも立ち寄れる店をつくりたい」</div>
-    </div>
-
-    <p>言い換えたのは見せ方だけで、その方がもともと持っている思いは変えていません。どこを前に出すかという話です。</p>
-
-    <p>ほかにも、薬機法・景表法・医療法にあたる表現や、「唯一」「画期的」「100%」といった言い切りすぎる表現も指摘の対象になります。申請後の差し戻しは、ほとんどの案件で経験することです。指摘がいくつも重なると、心が折れそうになる瞬間もあると思います。</p>
-
-    <p class="callout">そこから先を一緒に見ていくのが、山下の役目です。表現の言い換えも、申請後の差し戻しへの対応も、基本サポートの中でご相談いただけます。<strong>申請の前にご連絡いただいた案件であれば、そのあとの差し戻し対応まで入ります。</strong></p>
-  </section>
-
-  <section id="return">
-    <h2>リターンの考え方</h2>
-    <p>リターンは、提供する側の都合だけに寄ると、支援者にとって魅力が伝わりにくくなることがあります。応援したいだけの人と、見返りが欲しい人の両方がいるので、どちらにも用意しておくとよいと思います。</p>
-
-    <div class="pair-grid">
-      <div class="pair-card"><strong>ただ応援したい人</strong>気持ちに応えるリターンを用意します。</div>
-      <div class="pair-card"><strong>見返りが欲しい人</strong>魅力を感じてもらえる商品・体験を用意します。</div>
-    </div>
-
-    <p>山下自身のクラウドファンディングでは、知り合いのアーティスト作品・セミナー・商品をリターンにしました。提供してくださった方には原価で出していただき、セミナーの提供者には0円で受講者のリストを受け取る形にしていただきました。支援してくれた人はその商品に魅力を感じている人なので、提供者にとっても見込み客になりました。</p>
-  </section>
-
-  <section id="reality">
-    <h2>集まり方の本当のところ</h2>
-    <p>クラウドファンディングを始める前に、正直にお伝えしたいことがあります。</p>
-    <p>公開すれば知らない方からも支援が集まる、というものではありません。最初に動いてくださるのは、その方をすでによく知っている方々です。</p>
-    <div class="data-box">
-      <div class="data-title">支援してくださったのは、どんな方だったか</div>
-      <p class="data-lead">サポートを受けた方へのアンケート（9名）では、支援者の内訳がはっきり分かれました。</p>
-      <div class="data-row">
-        <div class="data-label">支援者として最も多かった層</div>
-        <div class="data-value"><b>9名全員</b>が「友人・知人・家族」または「既存のお客様・コミュニティの方」と回答</div>
-      </div>
-      <div class="data-row">
-        <div class="data-label">面識のない新規支援者の割合</div>
-        <div class="data-value"><b>9名中8名</b>が「全体の25%以下」と回答</div>
-      </div>
-    </div>
-
-    <p>そのため、山下がサポートに入っても、支援そのものを連れてくることはできません。山下にできるのは、審査を通るところまで並走することと、リターンや発信のご相談に乗ることです。</p>
-
-    <div class="stat-strip">
-      <span class="stat-chip">毎日SNSに投稿</span>
-      <span class="stat-chip">1人あたりDM約1,000件</span>
-      <span class="stat-chip">準備期間2〜3か月</span>
-    </div>
-
-    <p>山下自身も、クラウドファンディングを公開している間は毎日SNSに投稿を続け（一文だけの日もありました）、運営2人でそれぞれ1,000件ほどDMを送りました。講演会も本も、知らない方が突然足を運んだり買ったりすることは、めったにありません。だからこそ、公開前のファン集め・仲間集めが必要になります。</p>
-
-    <div class="data-box">
-      <div class="data-title">発信を続けた案件と、そうでない案件</div>
-      <div class="data-row">
-        <div class="data-label">公開中も発信を続けた案件</div>
-        <div class="data-bar"><span style="width:86%"></span></div>
-        <div class="data-value"><b>86%</b>が目標を達成（36件中31件）</div>
-      </div>
-      <div class="data-row">
-        <div class="data-label">発信が少なかった案件</div>
-        <div class="data-bar"><span style="width:6%"></span></div>
-        <div class="data-value"><b>6%</b>が目標を達成（18件中1件）</div>
-      </div>
-      <p class="data-note">集まった金額の平均も差がありました。発信を続けて達成した案件は約118万円、発信が少なく届かなかった案件は約29万円です。山下が携わった案件のうち、公開中の発信の様子を記録できている54件を集計したものです。</p>
-    </div>
-
-    <p>クラウドファンディングの準備期間（やると決めてから終わるまでの2〜3か月）は、この土台をつくる時間でもあります。</p>
-  </section>
-
   <section id="two-forms">
     <h2>協業の2つのかたち</h2>
     <p><span class="mark">この資料で「お客様」と書いているのは、協業先の顧問先・お客様のこと</span>です。クラウドファンディングを実施される方（CAMPFIREでいう起案者）を指します。</p>
@@ -852,10 +805,27 @@
     </figure>
   </section>
 
+  <section id="pricing">
+    <h2>協業先の費用</h2>
+
+    <div class="price-hero">
+      <div class="price-stack">
+        <div class="price-item"><span class="price-name">相談サポート</span><span class="price-was">33,000円</span></div>
+        <div class="price-plus">＋</div>
+        <div class="price-item"><span class="price-name">基本サポート</span><span class="price-was">55,000円</span></div>
+      </div>
+      <div class="price-sum">あわせて88,000円ぶんの内容が</div>
+      <div class="price-zero">0<span class="price-yen">円</span></div>
+      <div class="price-cond">案件をCAMPFIREで山下に紐付けていただくことが条件です</div>
+    </div>
+
+    <p class="callout"><strong>ご連絡は、CAMPFIREへ申請する前にお願いします。</strong>申請が済んだあとは紐付けができないため、サポートをお受けできません。</p>
+  </section>
+
   <section id="plans">
     <h2>0円の範囲とオプション</h2>
     <div class="table-wrap">
-      <table>
+      <table class="plan-table">
         <tr>
           <th></th>
           <th>相談サポート</th>
@@ -863,28 +833,46 @@
           <th>オプション</th>
         </tr>
         <tr>
-          <td>協業先の費用</td>
-          <td>0円</td>
-          <td>0円</td>
+          <td class="rowhead">協業先の費用</td>
+          <td class="free">0円</td>
+          <td class="free">0円</td>
           <td>別途費用</td>
         </tr>
         <tr>
-          <td>受けられること</td>
-          <td>初回オンライン相談・LINEでの質問</td>
-          <td>審査対応のアドバイス・リターンの壁打ち・LINEでの通話相談</td>
-          <td>本文の添削・テキスト文書の納品・テキストページの納品・サムネイルデザイン・リターン設定・ディレクション</td>
+          <td class="rowhead">受けられること</td>
+          <td>
+            初回オンライン相談<br>
+            LINEでの質問
+          </td>
+          <td>
+            審査対応のアドバイス<br>
+            リターンの壁打ち<br>
+            LINEでの通話相談
+          </td>
+          <td>
+            本文の添削<br>
+            テキスト文書の納品<br>
+            テキストページの納品<br>
+            サムネイルデザイン<br>
+            リターン設定<br>
+            ディレクション
+          </td>
         </tr>
         <tr>
-          <td>お客様の前に出るか</td>
-          <td>出ません（裏方のみ）</td>
-          <td>案件ごとに選べます</td>
-          <td>案件ごとに選べます</td>
+          <td class="rowhead">お客様の前に出るか</td>
+          <td>出ません<br>（裏方のみ）</td>
+          <td>案件ごとに<br>選べます</td>
+          <td>案件ごとに<br>選べます</td>
         </tr>
         <tr>
-          <td>費用を支払う人</td>
-          <td>－</td>
-          <td>－</td>
-          <td>協業先／お客様<br>（案件ごとに選べます）</td>
+          <td class="rowhead">費用を支払う人</td>
+          <td>—</td>
+          <td>—</td>
+          <td>
+            協業先<br>
+            またはお客様<br>
+            （案件ごとに選べます）
+          </td>
         </tr>
       </table>
     </div>
@@ -894,12 +882,12 @@
 
   <section id="condition">
     <h2>0円サポートの条件</h2>
-    <p>0円でご案内できるのは、相談サポート（初回オンライン相談・LINEでの質問）と、基本サポート（審査対応のアドバイス・リターンの壁打ち）です。本文の添削・テキスト文書やページの納品・サムネイルデザインなどのオプションは、別途費用でのご案内になります。</p>
+    <p>0円でご案内できるのは、相談サポート（初回オンライン相談・LINEでの質問）と、基本サポート（審査対応のアドバイス・リターンの壁打ち）です。本文の添削やページの納品などのオプションは、別途費用でのご案内になります。</p>
     <ol class="cond-list">
-      <li><strong>CAMPFIREへ申請する前に</strong>、山下へ連絡してください（協業先にお願いすることは連絡だけです）</li>
-      <li>山下が案件をCAMPFIREで紐付けます（手続きは山下が進めます）</li>
-      <li>相談サポートの範囲では、山下はお客様の前に出ず、協業先の裏方としてやり取りします。審査対応やリターンの壁打ちに進んだあとも、<strong>山下がお客様の前に出るのは、協業先からご希望があった案件だけです。</strong>ご希望がなければ、最後まで裏方でお手伝いします</li>
-      <li><strong>申請が済んだ案件はサポートをお受けできません。</strong>紐付けが申請前にしかできず、成功報酬をいただいていないためです。0円でも有料でも同じです</li>
+      <li><strong>CAMPFIREへ申請する前に、山下へご連絡ください。</strong>お願いすることは、この一報だけです</li>
+      <li>案件をCAMPFIREで紐付けます。手続きは山下が進めます</li>
+      <li>相談サポートの範囲では、山下はお客様の前に出ません。協業先の裏方として、協業先とだけやり取りします</li>
+      <li><strong>申請が済んだ案件は、お受けできません。</strong>紐付けが申請前にしかできないためです</li>
     </ol>
   </section>
 
@@ -907,38 +895,41 @@
     <h2>なぜ0円でできるのか</h2>
     <p>山下はCAMPFIRE公式キュレーションパートナーです。案件が紐付いていると、お客様がCAMPFIREへ支払う手数料17%の一部が、パートナー報酬として山下に入ります。この仕組みがあるので、成功報酬をいただかずにサポートに入れます。</p>
 
-    <p><span class="mark">そのうえで協業のときに0円にできるのは、お客様のことをいちばんよくご存じの方と、一緒に進められるからです。</span>背景やお人柄、これまでの経緯を一から伺うところから始めなくてよいので、山下は審査やリターンのご相談に最初から集中できます。だから、相談サポートと基本サポートは0円でご案内しています。</p>
-
     <figure>
-      <svg viewBox="0 0 360 350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="0円でも成り立つ理由の図">
+      <svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="支援金の流れの図">
         <defs>
           <marker id="arrowHead2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
             <path d="M0,0 L10,5 L0,10 z" fill="#6F6A5F"/>
           </marker>
         </defs>
 
-        <rect filter="url(#rough)" x="40" y="20" width="280" height="44" rx="8" fill="#FEF1E3" stroke="#E7C416"/>
-        <text x="180" y="47" text-anchor="middle" font-size="14" fill="#3B3B3B">支援者</text>
+        <rect filter="url(#rough)" x="70" y="8" width="220" height="40" rx="8" fill="#FEF1E3" stroke="#E7C416"/>
+        <text x="180" y="33" text-anchor="middle" font-size="14" fill="#3B3B3B">支援者から集まったお金</text>
 
-        <line filter="url(#rough)" x1="180" y1="64" x2="180" y2="118" stroke="#6F6A5F" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrowHead2)"/>
-        <text x="196" y="95" font-size="11.5" fill="#6F6A5F">支援金</text>
+        <line filter="url(#rough)" x1="180" y1="48" x2="180" y2="72" stroke="#6F6A5F" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrowHead2)"/>
 
-        <rect filter="url(#rough)" x="40" y="118" width="280" height="44" rx="8" fill="#FAFAFA" stroke="#6F6A5F"/>
-        <text x="180" y="145" text-anchor="middle" font-size="14" fill="#3B3B3B">CAMPFIRE</text>
+        <rect filter="url(#rough)" x="20" y="80" width="266" height="36" rx="6" fill="#FEF1E3" stroke="#6F6A5F"/>
+        <text x="153" y="103" text-anchor="middle" font-size="12.5" fill="#3B3B3B">起案者に入る分</text>
 
-        <line filter="url(#rough)" x1="180" y1="162" x2="180" y2="224" stroke="#6F6A5F" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrowHead2)"/>
-        <text x="196" y="186" font-size="11" fill="#6F6A5F">手数料17%の</text>
-        <text x="196" y="200" font-size="11" fill="#6F6A5F">一部</text>
+        <rect filter="url(#rough)" x="286" y="80" width="54" height="36" rx="6" fill="#E7C416" stroke="#6F6A5F"/>
+        <text x="313" y="103" text-anchor="middle" font-size="12" fill="#3B3B3B">17%</text>
+        <text x="313" y="132" text-anchor="middle" font-size="11" fill="#6F6A5F">CAMPFIREの</text>
+        <text x="313" y="145" text-anchor="middle" font-size="11" fill="#6F6A5F">手数料</text>
 
-        <rect filter="url(#rough)" x="40" y="224" width="280" height="54" rx="8" fill="#FEF1E3" stroke="#E7C416"/>
-        <text x="180" y="248" text-anchor="middle" font-size="14" fill="#3B3B3B">山下</text>
-        <text x="180" y="266" text-anchor="middle" font-size="11.5" fill="#6F6A5F">パートナー報酬</text>
+        <line filter="url(#rough)" x1="300" y1="152" x2="240" y2="182" stroke="#6F6A5F" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrowHead2)"/>
+        <text x="196" y="166" text-anchor="middle" font-size="11" fill="#6F6A5F">この一部が</text>
 
-        <text x="180" y="308" text-anchor="middle" font-size="11.5" fill="#3B3B3B">協業先がご自身の料金をどう決めるかに、</text>
-        <text x="180" y="326" text-anchor="middle" font-size="11.5" fill="#3B3B3B">山下は関与しません</text>
+        <rect filter="url(#rough)" x="60" y="190" width="180" height="52" rx="8" fill="#FEF1E3" stroke="#E7C416"/>
+        <text x="150" y="214" text-anchor="middle" font-size="14" fill="#3B3B3B">山下</text>
+        <text x="150" y="232" text-anchor="middle" font-size="11.5" fill="#6F6A5F">パートナー報酬</text>
+
+        <text x="180" y="270" text-anchor="middle" font-size="11.5" fill="#3B3B3B">支援が集まったときだけ、手数料の一部が山下に入ります。</text>
+        <text x="180" y="288" text-anchor="middle" font-size="11.5" fill="#3B3B3B">だから、成功報酬はいただいていません。</text>
       </svg>
-      <figcaption>図2：0円でも成り立つ理由（支援金の流れ）</figcaption>
+      <figcaption>図2：支援金の流れ。CAMPFIREが受け取る手数料17%の一部が、パートナー報酬として山下に入ります。</figcaption>
     </figure>
+
+    <p><span class="mark">そのうえで協業のときに0円にできるのは、お客様のことをいちばんよくご存じの方と、一緒に進められるからです。</span>背景やお人柄、これまでの経緯を一から伺うところから始めなくてよいので、山下は審査やリターンのご相談に最初から集中できます。だから、相談サポートと基本サポートは0円でご案内しています。</p>
   </section>
 
   <section id="billing">
@@ -974,34 +965,114 @@
     </ul>
   </section>
 
-  <section id="about">
-    <h2>山下について</h2>
+  <section id="case">
+    <h2>実際にあった案件</h2>
 
-    <div class="profile">
-      <img class="portrait" src="images/yamashita.jpg" alt="山下美樹">
-      <div class="profile-note">
-        <ul>
-          <li>CAMPFIRE公式キュレーションパートナー</li>
-          <li>クラウドファンディングプロデュースチームでのディレクター経験</li>
-          <li>2023年、CAMPFIRE本社にて表彰</li>
-          <li>成功報酬はいただいていません</li>
-        </ul>
+    <div class="case-grid">
+      <a class="case-card" href="https://camp-fire.jp/projects/view/918085" target="_blank" rel="noopener">
+        <img class="case-thumb" src="images/case_izena.jpg" alt="伊是名島の民宿のプロジェクトページ">
+        <span class="badge">117%達成・2度目の挑戦</span>
+        <h3>沖縄の離島・伊是名島で、祖母から受け継いだ民宿を復活させたい！</h3>
+        <div class="case-figs"><b>1,175,500円</b><span>目標 1,000,000円</span><span>支援者 97人</span></div>
+        <p>1回目はご自身だけで挑戦され、目標に届きませんでした。その後にご依頼をいただき、2回目はサポートに入って117%で終えています。このあとの「利用者の声」に出てくる、末吉周平さまの案件です。</p>
+        <span class="case-link">CAMPFIREのページを見る</span>
+      </a>
+
+      <a class="case-card" href="https://camp-fire.jp/projects/view/667599" target="_blank" rel="noopener">
+        <img class="case-thumb" src="images/case_kureha.jpg" alt="呉羽キャンディのプロジェクトページ">
+        <span class="badge">149%達成</span>
+        <h3>ミニトマト「呉羽キャンディ」を広めたい</h3>
+        <div class="case-figs"><b>746,900円</b><span>目標 500,000円</span></div>
+        <p>「沢山の方から問い合わせを頂き、メディアにも取り上げられ、地方から全国まで認知されるキッカケとなりました」という声をいただきました。</p>
+        <span class="case-link">CAMPFIREのページを見る</span>
+      </a>
+
+      <a class="case-card" href="https://camp-fire.jp/projects/357909/view" target="_blank" rel="noopener">
+        <img class="case-thumb" src="images/case_kuromon.png" alt="黒門カルチャーファクトリーのプロジェクトページ">
+        <span class="badge">217%達成・山下自身の案件</span>
+        <h3>大人の秘密基地を存続させたい（黒門カルチャーファクトリー）</h3>
+        <div class="case-figs"><b>1,304,000円</b><span>目標 600,000円</span><span>支援者 256人</span></div>
+        <p>大阪・日本橋の地下にあるレンタルスペースです。コロナ禍で利用の予約が入らなくなり、家賃だけが出ていく状態になりました。3か月分の家賃を目標に、この場所を続けたいと呼びかけた案件です。リターンは知り合いの作品やセミナーばかりでしたが、256人が支援してくださいました。</p>
+        <span class="case-link">CAMPFIREのページを見る</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="screening">
+    <h2>審査で止まるところ</h2>
+    <p>クラウドファンディングには審査があります。中身が同じでも、<span class="mark">書き方だけで止まってしまうこと</span>があります。よくあるのは、その方の事情や背景が伝わりきらないまま、お願いの部分が先に出てしまう形です。</p>
+
+    <div class="transform-box">
+      <div class="before">「自分のお店を出したいので、開店の資金を集めたい」</div>
+      <svg class="arrow-icon" viewBox="0 0 40 20" role="img" aria-label="変換の例">
+        <path filter="url(#rough)" d="M2 10 H32" stroke="#3B3B3B" stroke-width="2.4" stroke-linecap="round"/>
+        <path filter="url(#rough)" d="M24 4 L34 10 L24 16" fill="none" stroke="#3B3B3B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="after">「この街には、子ども連れで気兼ねなく過ごせる場所がありません。誰でも立ち寄れる店をつくりたい」</div>
+    </div>
+
+    <p>言い換えたのは見せ方だけで、その方がもともと持っている思いは変えていません。同じ話のどこを先に出すか、という違いです。</p>
+
+    <p>ほかにも、薬機法・景表法・医療法にあたる表現や、「唯一」「画期的」「100%」といった言い切りすぎる表現は、直しを求められることがあります。申請後の差し戻しは、ほとんどの案件で通る道です。</p>
+
+    <p class="callout">そこから先を一緒に見ていくのが、山下の役目です。表現の言い換えも、申請後の差し戻しへの対応も、基本サポートの中でご相談いただけます。<strong>申請の前にご連絡いただいた案件であれば、そのあとの差し戻し対応まで入ります。</strong></p>
+  </section>
+
+  <section id="return">
+    <h2>リターンの考え方</h2>
+    <p>支援してくださる方には、気持ちで応援したい方と、内容そのものを楽しみにしてくださる方がいます。どちらにも選べるものが並んでいると、支援が広がりやすくなります。</p>
+
+    <div class="pair-grid">
+      <div class="pair-card"><strong>ただ応援したい人</strong>気持ちに応えるリターンを用意します。</div>
+      <div class="pair-card"><strong>見返りが欲しい人</strong>魅力を感じてもらえる商品・体験を用意します。</div>
+    </div>
+
+    <p>山下自身のクラウドファンディングでは、知り合いのアーティスト作品・セミナー・商品をリターンにしました。提供してくださった方には原価で出していただき、セミナーの提供者には0円で受講者のリストを受け取る形にしていただきました。支援してくれた人はその商品に魅力を感じている人なので、提供者にとっても見込み客になりました。</p>
+  </section>
+
+  <section id="reality">
+    <h2>集まり方の本当のところ</h2>
+    <p>クラウドファンディングを始める前に、正直にお伝えしたいことがあります。</p>
+    <p>公開すれば知らない方からも支援が集まる、というものではありません。最初に動いてくださるのは、その方をすでによく知っている方々です。</p>
+    <div class="data-box">
+      <div class="data-title">支援してくださったのは、どんな方だったか</div>
+      <p class="data-lead">サポートを受けた方へのアンケート（9名）では、支援者の内訳がはっきり分かれました。</p>
+      <div class="data-row">
+        <div class="data-label">支援者として最も多かった層</div>
+        <div class="data-value"><b>9名全員</b>が「友人・知人・家族」または「既存のお客様・コミュニティの方」と回答</div>
       </div>
-      <img class="award-photo" src="images/campfire_award.jpg" alt="2023年CAMPFIRE本社にて表彰されたときの様子">
-      <p class="award-caption">2023年、CAMPFIRE本社にて表彰</p>
+      <div class="data-row">
+        <div class="data-label">面識のない新規支援者の割合</div>
+        <div class="data-value"><b>9名中8名</b>が「全体の25%以下」と回答</div>
+      </div>
     </div>
 
-    <div class="stat-cards">
-      <div class="stat-card">495件以上のクラウドファンディングに携わってきました</div>
-      <div class="stat-card">支援総額は3億円を超えています</div>
-      <div class="stat-card">自身のクラウドファンディングでは130万円・支援者256人・目標の200%を超える支援を集めました</div>
+    <p>そのため、山下がサポートに入っても、支援そのものを連れてくることはできません。山下にできるのは、審査を通るところまで並走することと、リターンや発信のご相談に乗ることです。</p>
+
+    <div class="stat-strip">
+      <span class="stat-chip">毎日SNSに投稿</span>
+      <span class="stat-chip">1人あたりDM約1,000件</span>
+      <span class="stat-chip">準備期間2〜3か月</span>
     </div>
 
-    <p class="note">
-      もう少し詳しく知りたい方は、こちらもご覧ください。<br>
-      ネコノテのサービス全体：<a href="https://nekonote.help/" target="_blank" rel="noopener">https://nekonote.help/</a><br>
-      サポート実績のまとめ：<a href="https://note.com/chiby_smile/m/m2809bd426e70" target="_blank" rel="noopener">https://note.com/chiby_smile/m/m2809bd426e70</a>
-    </p>
+    <p>山下自身も、クラウドファンディングを公開している間は毎日SNSに投稿を続け（一文だけの日もありました）、運営2人でそれぞれ1,000件ほどDMを送りました。講演会も本も、知らない方が突然足を運んだり買ったりすることは、めったにありません。だからこそ、公開前のファン集め・仲間集めが必要になります。</p>
+
+    <div class="data-box">
+      <div class="data-title">発信を続けた案件と、そうでない案件</div>
+      <div class="data-row">
+        <div class="data-label">公開中も発信を続けた案件</div>
+        <div class="data-bar"><span style="width:86%"></span></div>
+        <div class="data-value"><b>86%</b>が目標を達成（36件中31件）</div>
+      </div>
+      <div class="data-row">
+        <div class="data-label">発信が少なかった案件</div>
+        <div class="data-bar"><span style="width:6%"></span></div>
+        <div class="data-value"><b>6%</b>が目標を達成（18件中1件）</div>
+      </div>
+      <p class="data-note">集まった金額の平均も差がありました。発信を続けて達成した案件は約118万円、発信が少なく届かなかった案件は約29万円です。山下が携わった案件のうち、公開中の発信の様子を記録できている54件を集計したものです。</p>
+    </div>
+
+    <p>クラウドファンディングの準備期間（やると決めてから終わるまでの2〜3か月）は、この土台をつくる時間でもあります。</p>
   </section>
 
   <section id="voice">
@@ -1030,6 +1101,36 @@
     </div>
 
     <p class="note">もっと見る：<a href="https://nekonote.help/#voice" target="_blank" rel="noopener">https://nekonote.help/#voice</a></p>
+  </section>
+
+  <section id="about">
+    <h2>山下について</h2>
+
+    <div class="profile">
+      <img class="portrait" src="images/yamashita.jpg" alt="山下美樹">
+      <div class="profile-note">
+        <ul>
+          <li>CAMPFIRE公式キュレーションパートナー</li>
+          <li>クラウドファンディングプロデュースチームでのディレクター経験</li>
+          <li>2023年、CAMPFIRE本社にて表彰</li>
+          <li>成功報酬はいただいていません</li>
+        </ul>
+      </div>
+      <img class="award-photo" src="images/campfire_award.jpg" alt="2023年CAMPFIRE本社にて表彰されたときの様子">
+      <p class="award-caption">2023年、CAMPFIRE本社にて表彰</p>
+    </div>
+
+    <div class="stat-cards">
+      <div class="stat-card">495件以上のクラウドファンディングに携わってきました</div>
+      <div class="stat-card">支援総額は3億円を超えています</div>
+      <div class="stat-card">自身のクラウドファンディングでは130万円・支援者256人・目標の200%を超える支援を集めました</div>
+    </div>
+
+    <p class="note">
+      もう少し詳しく知りたい方は、こちらもご覧ください。<br>
+      ネコノテのサービス全体：<a href="https://nekonote.help/" target="_blank" rel="noopener">https://nekonote.help/</a><br>
+      サポート実績のまとめ：<a href="https://note.com/chiby_smile/m/m2809bd426e70" target="_blank" rel="noopener">https://note.com/chiby_smile/m/m2809bd426e70</a>
+    </p>
   </section>
 
   <section id="scope">
