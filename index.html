@@ -463,6 +463,65 @@
     padding:16px 18px;
     box-shadow:2px 3px 0 rgba(59,59,59,0.08);
   }
+  .cf-stats{
+    background:#FFFFFF;
+    border:1.5px solid #E6E6E6;
+    border-radius:10px;
+    padding:14px 16px;
+    margin:0 0 12px;
+  }
+  .cf-label{
+    font-size:0.78rem;
+    color:var(--gray);
+  }
+  .cf-label2{
+    margin-top:12px;
+  }
+  .cf-total{
+    font-size:1.7rem;
+    font-weight:700;
+    line-height:1.2;
+    letter-spacing:-0.01em;
+  }
+  .cf-yen{
+    font-size:1rem;
+    margin-left:2px;
+  }
+  .cf-bar{
+    position:relative;
+    background:#EDEDE8;
+    border-radius:999px;
+    height:16px;
+    margin:8px 0 6px;
+    overflow:hidden;
+  }
+  .cf-bar span{
+    display:block;
+    height:100%;
+    background:linear-gradient(90deg,#F5A623 0%,#E94E3C 100%);
+    border-radius:999px;
+  }
+  .cf-bar b{
+    position:absolute;
+    left:8px;
+    top:0;
+    line-height:16px;
+    font-size:0.72rem;
+    color:#FFFFFF;
+  }
+  .cf-goal{
+    font-size:0.8rem;
+    color:var(--gray);
+  }
+  .cf-backers{
+    font-size:1.4rem;
+    font-weight:700;
+    line-height:1.2;
+  }
+  .cf-unit{
+    font-size:0.95rem;
+    margin-left:2px;
+  }
   .case-thumb{
     width:100%;
     height:auto;
@@ -470,7 +529,7 @@
     display:block;
     margin:0 0 12px;
   }
-  .case-figs{
+  .case-figs-unused{
     display:flex;
     flex-wrap:wrap;
     align-items:baseline;
@@ -973,27 +1032,48 @@
     <div class="case-grid">
       <a class="case-card" href="https://camp-fire.jp/projects/view/918085" target="_blank" rel="noopener">
         <img class="case-thumb" src="images/case_izena.jpg" alt="伊是名島の民宿のプロジェクトページ">
-        <span class="badge">117%達成・2度目の挑戦</span>
+        <div class="cf-stats">
+          <div class="cf-label">現在の支援総額</div>
+          <div class="cf-total">1,175,500<span class="cf-yen">円</span></div>
+          <div class="cf-bar"><span style="width:100%"></span><b>117%</b></div>
+          <div class="cf-goal">目標金額は1,000,000円</div>
+          <div class="cf-label cf-label2">支援者数</div>
+          <div class="cf-backers">97<span class="cf-unit">人</span></div>
+        </div>
+        <span class="badge">2度目の挑戦</span>
         <h3>沖縄の離島・伊是名島で、祖母から受け継いだ民宿を復活させたい！</h3>
-        <div class="case-figs"><b>1,175,500円</b><span>目標 1,000,000円</span><span>支援者 97人</span></div>
         <p>1回目はご自身だけで挑戦され、目標に届きませんでした。その後にご依頼をいただき、2回目はサポートに入って117%で終えています。このあとの「利用者の声」に出てくる、末吉周平さまの案件です。</p>
         <span class="case-link">CAMPFIREのページを見る</span>
       </a>
 
       <a class="case-card" href="https://camp-fire.jp/projects/view/667599" target="_blank" rel="noopener">
         <img class="case-thumb" src="images/case_kureha.jpg" alt="呉羽キャンディのプロジェクトページ">
-        <span class="badge">149%達成</span>
+        <div class="cf-stats">
+          <div class="cf-label">現在の支援総額</div>
+          <div class="cf-total">746,900<span class="cf-yen">円</span></div>
+          <div class="cf-bar"><span style="width:100%"></span><b>149%</b></div>
+          <div class="cf-goal">目標金額は500,000円</div>
+          <div class="cf-label cf-label2">支援者数</div>
+          <div class="cf-backers">112<span class="cf-unit">人</span></div>
+        </div>
+        <span class="badge">認知が広がった案件</span>
         <h3>ミニトマト「呉羽キャンディ」を広めたい</h3>
-        <div class="case-figs"><b>746,900円</b><span>目標 500,000円</span></div>
         <p>「沢山の方から問い合わせを頂き、メディアにも取り上げられ、地方から全国まで認知されるキッカケとなりました」という声をいただきました。</p>
         <span class="case-link">CAMPFIREのページを見る</span>
       </a>
 
       <a class="case-card" href="https://camp-fire.jp/projects/357909/view" target="_blank" rel="noopener">
         <img class="case-thumb" src="images/case_kuromon.png" alt="黒門カルチャーファクトリーのプロジェクトページ">
-        <span class="badge">217%達成・山下自身の案件</span>
+        <div class="cf-stats">
+          <div class="cf-label">現在の支援総額</div>
+          <div class="cf-total">1,304,000<span class="cf-yen">円</span></div>
+          <div class="cf-bar"><span style="width:100%"></span><b>217%</b></div>
+          <div class="cf-goal">目標金額は600,000円</div>
+          <div class="cf-label cf-label2">支援者数</div>
+          <div class="cf-backers">256<span class="cf-unit">人</span></div>
+        </div>
+        <span class="badge">山下自身の案件</span>
         <h3>大人の秘密基地を存続させたい（黒門カルチャーファクトリー）</h3>
-        <div class="case-figs"><b>1,304,000円</b><span>目標 600,000円</span><span>支援者 256人</span></div>
         <p>大阪・日本橋の地下にあるレンタルスペースです。コロナ禍で利用の予約が入らなくなり、家賃だけが出ていく状態になりました。3か月分の家賃を目標に、この場所を続けたいと呼びかけた案件です。リターンは知り合いの作品やセミナーばかりでしたが、256人が支援してくださいました。</p>
         <span class="case-link">CAMPFIREのページを見る</span>
       </a>
