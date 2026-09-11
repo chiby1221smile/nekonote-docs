@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>クラウドファンディング活用のご提案｜ネコノテ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --yellow:#E7C416;
+    --text:#3B3B3B;
+    --cream:#FEF1E3;
+    --gray:#6F6A5F;
+    --bg:#FFFFFF;
+    --bg-soft:#FAFAFA;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    padding:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
+    line-height:1.8;
+    font-size:16px;
+    -webkit-text-size-adjust:100%;
+  }
+  .wrap{
+    max-width:680px;
+    margin:0 auto;
+    padding:0 20px 60px;
+  }
+  h1, h2, h3, .hand, figcaption, .can-card h3, .case-card h3, .stat-card, .fit-quote{
+    font-family:"Yomogi","Hiragino Maru Gothic ProN",sans-serif;
+  }
+  svg text{
+    font-family:"Yomogi","Hiragino Maru Gothic ProN",sans-serif;
+  }
+  .mark{
+    background:linear-gradient(transparent 60%, #FFE98A 60%);
+    padding:0 2px;
+  }
+  header.hero{
+    background:var(--cream);
+    padding:28px 20px 26px;
+    margin-bottom:8px;
+    text-align:center;
+  }
+  header.hero .logo{
+    height:36px;
+    width:auto;
+    margin-bottom:14px;
+  }
+  header.hero .tag{
+    display:inline-block;
+    background:var(--yellow);
+    color:var(--text);
+    font-size:0.78rem;
+    font-weight:700;
+    padding:4px 10px;
+    border-radius:999px;
+    margin-bottom:12px;
+  }
+  header.hero h1{
+    font-size:1.5rem;
+    line-height:1.5;
+    margin:0;
+  }
+  /* 「クラウドファンディング活／用のご提案」と割れないよう、切れてよい場所を決める */
+  header.hero h1 span{
+    display:inline-block;
+  }
+  section{
+    padding:36px 0 8px;
+    border-bottom:1px solid #EFEFEF;
+  }
+  section:last-of-type{
+    border-bottom:none;
+  }
+  h2{
+    font-size:1.2rem;
+    line-height:1.6;
+    margin:0 0 18px;
+    padding-left:12px;
+    border-left:4px solid var(--yellow);
+  }
+  h3{
+    font-size:1rem;
+    margin:20px 0 8px;
+  }
+  p{
+    margin:0 0 14px;
+  }
+  ul, ol{
+    margin:0 0 16px;
+    padding-left:1.3em;
+  }
+  li{
+    margin-bottom:8px;
+  }
+  .scene-list li{
+    background:var(--bg-soft);
+    list-style:none;
+    margin:0 0 8px;
+    padding:12px 14px;
+    border-radius:8px;
+    font-size:0.95rem;
+  }
+  .scene-list{
+    padding-left:0;
+  }
+  .steps{
+    counter-reset:step;
+    padding-left:0;
+  }
+  .steps li{
+    list-style:none;
+    position:relative;
+    padding:2px 0 2px 40px;
+    margin-bottom:16px;
+  }
+  .steps li::before{
+    counter-increment:step;
+    content:counter(step);
+    position:absolute;
+    left:0;
+    top:0;
+    width:28px;
+    height:28px;
+    border-radius:50%;
+    background:var(--yellow);
+    color:var(--text);
+    font-weight:700;
+    font-size:0.9rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .cond-list{
+    counter-reset:cond;
+    padding-left:0;
+  }
+  .cond-list li{
+    list-style:none;
+    position:relative;
+    padding:4px 0 4px 34px;
+    margin-bottom:10px;
+    font-size:0.95rem;
+  }
+  .cond-list li::before{
+    counter-increment:cond;
+    content:counter(cond);
+    position:absolute;
+    left:0;
+    top:2px;
+    width:22px;
+    height:22px;
+    border-radius:50%;
+    background:var(--cream);
+    color:var(--text);
+    font-weight:700;
+    font-size:0.8rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  figure{
+    max-width:420px;
+    margin:0 auto 8px;
+  }
+  figure svg{
+    width:100%;
+    height:auto;
+    display:block;
+  }
+  figcaption{
+    font-size:0.9rem;
+    color:var(--gray);
+    margin:8px 0 24px;
+    text-align:center;
+  }
+  .table-wrap{
+    overflow-x:auto;
+    margin-bottom:16px;
+    -webkit-overflow-scrolling:touch;
+  }
+  table{
+    border-collapse:collapse;
+    width:100%;
+    min-width:520px;
+    font-size:0.88rem;
+  }
+  th, td{
+    border:1px solid #E6E6E6;
+    padding:10px 12px;
+    text-align:left;
+    vertical-align:top;
+  }
+  th{
+    background:var(--cream);
+    color:var(--text);
+    white-space:nowrap;
+  }
+  .note{
+    font-size:0.85rem;
+    color:var(--gray);
+  }
+  .quote{
+    background:var(--bg-soft);
+    border-left:4px solid var(--yellow);
+    padding:14px 16px;
+    margin:0 0 14px;
+    font-size:0.93rem;
+  }
+  .voice-block{
+    margin-bottom:26px;
+  }
+  .voice-block h3{
+    margin-bottom:4px;
+  }
+  .voice-meta{
+    font-size:0.88rem;
+    color:var(--gray);
+    margin-bottom:10px;
+  }
+  a{
+    color:var(--text);
+    text-decoration-color:var(--yellow);
+    text-decoration-thickness:2px;
+    word-break:break-all;
+  }
+  .qa{
+    margin-bottom:18px;
+  }
+  .qa .q{
+    font-weight:700;
+    margin-bottom:6px;
+  }
+  .cta{
+    display:inline-block;
+    background:var(--yellow);
+    color:var(--text);
+    text-decoration:none;
+    font-weight:700;
+    padding:14px 26px;
+    border-radius:8px;
+    margin-top:6px;
+  }
+  footer{
+    padding:30px 0 10px;
+    text-align:center;
+    color:var(--gray);
+    font-size:0.8rem;
+  }
+
+  /* ここから今回追加のカード・図解まわり */
+  .icon{
+    width:42px;
+    height:42px;
+    display:block;
+    margin-bottom:8px;
+  }
+  .can-grid{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    margin:18px 0 8px;
+  }
+  .can-card{
+    background:var(--cream);
+    border-radius:16px 20px 18px 22px / 20px 16px 22px 18px;
+    padding:16px 18px;
+    box-shadow:2px 3px 0 rgba(59,59,59,0.08);
+  }
+  .can-card:nth-child(odd){ transform:rotate(-0.6deg); }
+  .can-card:nth-child(even){ transform:rotate(0.5deg); }
+  .can-card h3{
+    margin:0 0 6px;
+    font-size:1.02rem;
+  }
+  .can-card p{
+    margin:0;
+    font-size:0.92rem;
+  }
+  .fit-grid{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    margin:16px 0 6px;
+  }
+  .fit-card{
+    background:var(--bg-soft);
+    border:1.5px solid #EFE6D8;
+    border-radius:14px 18px 16px 20px / 18px 14px 20px 16px;
+    padding:14px 16px;
+    font-size:0.95rem;
+  }
+  .fit-quote{
+    background:var(--cream);
+    border-radius:16px 20px 18px 16px / 18px 16px 20px 16px;
+    padding:14px 18px;
+    font-size:0.98rem;
+    margin:16px 0;
+    transform:rotate(-0.4deg);
+    box-shadow:2px 3px 0 rgba(59,59,59,0.08);
+  }
+  .not-fit{
+    background:#F2F1EC;
+    border:1.5px dashed var(--gray);
+    border-radius:14px;
+    padding:14px 16px;
+    margin-top:14px;
+    color:var(--gray);
+    font-size:0.92rem;
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+  }
+  .not-fit .icon-x{
+    width:26px;
+    height:26px;
+    flex:none;
+    margin-top:2px;
+  }
+  .case-grid{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+    margin:16px 0 8px;
+  }
+  .case-card{
+    background:var(--cream);
+    border-radius:16px 20px 18px 22px / 20px 16px 22px 18px;
+    padding:16px 18px;
+    box-shadow:2px 3px 0 rgba(59,59,59,0.08);
+  }
+  .case-card:nth-child(even){ transform:rotate(0.4deg); }
+  .case-card:nth-child(odd){ transform:rotate(-0.4deg); }
+  .badge{
+    display:inline-block;
+    background:var(--yellow);
+    color:var(--text);
+    font-weight:700;
+    font-size:0.78rem;
+    padding:3px 10px;
+    border-radius:999px;
+    margin-bottom:8px;
+  }
+  .case-card h3{
+    margin:0 0 6px;
+    font-size:1.02rem;
+  }
+  .case-card p{
+    margin:0;
+    font-size:0.92rem;
+  }
+  .callout{
+    background:var(--cream);
+    border-left:4px solid var(--yellow);
+    border-radius:0 12px 12px 0;
+    padding:14px 16px;
+    margin:16px 0;
+    font-weight:700;
+    font-size:0.98rem;
+  }
+  .transform-box{
+    background:var(--bg-soft);
+    border-radius:14px;
+    padding:16px 18px;
+    margin:16px 0;
+    font-size:0.93rem;
+  }
+  .transform-box .before{
+    color:var(--gray);
+  }
+  .transform-box .arrow-icon{
+    width:36px;
+    height:18px;
+    margin:8px 0;
+    display:block;
+  }
+  .transform-box .after{
+    color:var(--text);
+    font-weight:700;
+  }
+  .pair-grid{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    margin:14px 0 18px;
+  }
+  .pair-card{
+    background:var(--cream);
+    border-radius:14px 18px 16px 20px / 18px 14px 20px 16px;
+    padding:14px 16px;
+    font-size:0.93rem;
+  }
+  .pair-card strong{
+    display:block;
+    margin-bottom:4px;
+    font-size:0.98rem;
+  }
+  .stat-strip{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:16px 0 18px;
+  }
+  .stat-chip{
+    background:var(--bg-soft);
+    border:1.5px solid var(--yellow);
+    border-radius:999px;
+    padding:8px 14px;
+    font-size:0.85rem;
+    font-weight:700;
+  }
+  .chip-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin:14px 0 6px;
+  }
+  .chip{
+    background:var(--cream);
+    border-radius:999px;
+    padding:6px 12px;
+    font-size:0.85rem;
+    border:1.5px solid var(--yellow);
+  }
+  .check-list{
+    padding-left:0;
+    margin:14px 0;
+  }
+  .check-list li{
+    list-style:none;
+    display:flex;
+    align-items:flex-start;
+    gap:8px;
+    font-size:0.94rem;
+    margin-bottom:10px;
+  }
+  .check-icon{
+    width:20px;
+    height:20px;
+    flex:none;
+    margin-top:2px;
+  }
+  .profile{
+    text-align:center;
+    margin-bottom:18px;
+  }
+  .profile img.portrait{
+    width:160px;
+    height:200px;
+    object-fit:cover;
+    border-radius:16px;
+    border:3px solid var(--cream);
+    box-shadow:2px 3px 0 rgba(59,59,59,0.1);
+    margin:0 auto 14px;
+    display:block;
+  }
+  .award-photo{
+    width:100%;
+    height:auto;
+    border-radius:14px;
+    border:3px solid var(--cream);
+    display:block;
+    margin:6px auto 6px;
+  }
+  .award-caption{
+    text-align:center;
+    font-size:0.85rem;
+    color:var(--gray);
+    margin-bottom:18px;
+  }
+  .profile-note{
+    text-align:left;
+    max-width:420px;
+    margin:0 auto 18px;
+  }
+  .stat-cards{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    margin-bottom:18px;
+  }
+  .stat-card{
+    background:var(--cream);
+    border:2px solid var(--yellow);
+    border-radius:16px 20px 18px 22px / 20px 16px 22px 18px;
+    padding:14px 16px;
+    font-weight:700;
+    text-align:center;
+    font-size:1rem;
+  }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true">
+  <defs>
+    <filter id="rough">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+</svg>
+<div class="wrap">
+
+  <header class="hero">
+    <img class="logo" src="images/nekonote_logo.png" alt="ネコノテ">
+    <span class="tag">協業先の方へのご提案</span>
+    <h1><span>クラウドファンディング</span><span>活用のご提案</span></h1>
+  </header>
+
+  <section id="intro">
+    <p>クラウドファンディングは、資金を集める手段であると同時に、顧問先やお客様がやりたいことを<span class="mark">前に進める道具</span>として使えます。案件をCAMPFIREで山下に紐付けていただくと、相談サポート（33,000円）と基本サポート（55,000円）、あわせて<span class="mark">88,000円ぶんの内容が0円</span>になります。</p>
+    <p>案件が出たら、<span class="mark">CAMPFIREへ申請する前に</span>、山下へひと言ご連絡ください。申請が済んだあとは紐付けができないため、サポートをお受けできません。</p>
+  </section>
+
+  <section id="can-do">
+    <h2>資金集めだけの道具ではありません</h2>
+    <p>クラウドファンディングでできることは、資金を集めることだけではありません。</p>
+
+    <div class="can-grid">
+      <div class="can-card">
+        <svg class="icon" viewBox="0 0 48 48" role="img" aria-label="資金を集める">
+          <path filter="url(#rough)" d="M18 10 L30 10 L35 17 Q41 25 35 34 Q28 42 18 42 Q7 42 5 30 Q3 19 12 14 Z" fill="#FEF1E3" stroke="#3B3B3B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path filter="url(#rough)" d="M18 10 Q20 5 24 5 Q28 5 30 10" fill="none" stroke="#3B3B3B" stroke-width="2.2" stroke-linecap="round"/>
+          <text x="15" y="30" font-size="15" fill="#E7C416" font-weight="700">¥</text>
+        </svg>
+        <h3>資金を集める</h3>
+        <p>かかる費用（会場・制作・チームの稼働）を先に集められます。</p>
+      </div>
+
+      <div class="can-card">
+        <svg class="icon" viewBox="0 0 48 48" role="img" aria-label="知ってもらう">
+          <path filter="url(#rough)" d="M6 22 L20 15 L20 31 L6 27 Z" fill="#FEF1E3" stroke="#3B3B3B" stroke-width="2.4" stroke-linejoin="round"/>
+          <path filter="url(#rough)" d="M20 15 L34 10 L34 36 L20 31" fill="#FEF1E3" stroke="#3B3B3B" stroke-width="2.4" stroke-linejoin="round"/>
+          <path filter="url(#rough)" d="M11 27 L13 36" stroke="#3B3B3B" stroke-width="2.2" stroke-linecap="round"/>
+          <path filter="url(#rough)" d="M38 16 Q43 21 38 26" fill="none" stroke="#E7C416" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        <h3>知ってもらう</h3>
+        <p>プロジェクトの内容を発信できるメディアになります。地方から全国まで広がることがあります。</p>
+      </div>
+
+      <div class="can-card">
+        <svg class="icon" viewBox="0 0 48 48" role="img" aria-label="お客様を先に作る">
+          <circle filter="url(#rough)" cx="17" cy="20" r="11" fill="#FEF1E3" stroke="#3B3B3B" stroke-width="2.3"/>
+          <circle filter="url(#rough)" cx="31" cy="20" r="11" fill="none" stroke="#3B3B3B" stroke-width="2.3"/>
+          <path filter="url(#rough)" d="M16 34 Q24 40 32 34" fill="none" stroke="#E7C416" stroke-width="2.3" stroke-linecap="round"/>
+        </svg>
+        <h3>お客様を先に作る</h3>
+        <p>支援者は、公開前に決まったお客様です。連絡先がつながります。</p>
+      </div>
+
+      <div class="can-card">
+        <svg class="icon" viewBox="0 0 48 48" role="img" aria-label="ファンと仲間ができる">
+          <path filter="url(#rough)" d="M24 39 C9 29 5 18 13 12 C18 8 23 12 24 17 C25 12 30 8 35 12 C43 18 39 29 24 39 Z" fill="#FEF1E3" stroke="#3B3B3B" stroke-width="2.4" stroke-linejoin="round"/>
+          <path filter="url(#rough)" d="M6 10 L9 13" stroke="#E7C416" stroke-width="2.2" stroke-linecap="round"/>
+          <path filter="url(#rough)" d="M42 10 L39 13" stroke="#E7C416" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        <h3>ファンと仲間ができる</h3>
+        <p>応援してくれる人が可視化されます。</p>
+      </div>
+
+      <div class="can-card">
+        <svg class="icon" viewBox="0 0 48 48" role="img" aria-label="反応を試せる">
+          <circle filter="url(#rough)" cx="20" cy="20" r="12" fill="#FEF1E3" stroke="#3B3B3B" stroke-width="2.4"/>
+          <path filter="url(#rough)" d="M29 29 L40 40" stroke="#3B3B3B" stroke-width="2.6" stroke-linecap="round"/>
+          <path filter="url(#rough)" d="M13 20 Q17 13 20 20 Q23 27 27 20" fill="none" stroke="#E7C416" stroke-width="2.1" stroke-linecap="round"/>
+        </svg>
+        <h3>反応を試せる</h3>
+        <p>本気で走らない場合でも、どれくらい反応があるかを見るテストマーケティングとして使えます。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="fit">
+    <h2>こんな案件が向いています</h2>
+
+    <div class="fit-grid">
+      <div class="fit-card">出版（とくに自費出版）と、出版後のイベント・プロモーション</div>
+      <div class="fit-card">やりたいことが先にあって、その手段として本やイベントがある案件</div>
+      <div class="fit-card">実際に費用がかかるもの（会場・人の稼働・制作）</div>
+      <div class="fit-card">お店を持ちたい、続けたい場所を維持したい、といった「応援してくれる人を探す」案件</div>
+    </div>
+
+    <p class="fit-quote">「これ、クラウドファンディングでやればよかった、と思う案件がたくさんあります」</p>
+
+    <div class="not-fit">
+      <svg class="icon-x" viewBox="0 0 32 32" role="img" aria-label="向いていないもの">
+        <circle filter="url(#rough)" cx="16" cy="16" r="13" fill="none" stroke="#6F6A5F" stroke-width="2.3"/>
+        <path filter="url(#rough)" d="M10 10 L22 22" stroke="#6F6A5F" stroke-width="2.3" stroke-linecap="round"/>
+        <path filter="url(#rough)" d="M22 10 L10 22" stroke="#6F6A5F" stroke-width="2.3" stroke-linecap="round"/>
+      </svg>
+      <span><strong>向いていないもの：</strong>自己の利益のためだけのもの</span>
+    </div>
+  </section>
+
+  <section id="case">
+    <h2>実際にあった案件</h2>
+
+    <div class="case-grid">
+      <div class="case-card">
+        <span class="badge">100万円・出版が見えてきた段階</span>
+        <h3>100人インタビューの本</h3>
+        <p>乳がんサバイバーの方が100人にインタビューをして本にする企画です。クラウドファンディングは目標を超えて終わり、今は出版が見えてきた段階です。</p>
+      </div>
+
+      <div class="case-card">
+        <span class="badge">149%・認知が広がった声</span>
+        <h3>呉羽キャンディ</h3>
+        <p>目標500,000円に対し746,900円（149%）。「地方から全国まで認知されるキッカケになりました」という声をいただきました。</p>
+      </div>
+
+      <div class="case-card">
+        <span class="badge">130万円・256人</span>
+        <h3>山下自身のレンタルスペース</h3>
+        <p>家賃だけが出ていく状態から、3か月分の家賃を目標に実施しました。130万円・支援者256人・目標の200%を超える支援が集まりました。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="screening">
+    <h2>審査で止まるところ</h2>
+    <p>クラウドファンディングには審査があります。自己の利益のためだけの内容は、通りにくいことがあります。結果として自分の利益になる内容でも、<span class="mark">世の中への影響を言葉にできれば</span>審査は通ります。</p>
+
+    <div class="transform-box">
+      <div class="before">「行き別れたお母さんに会いたい」だけでは通りにくい内容も</div>
+      <svg class="arrow-icon" viewBox="0 0 40 20" role="img" aria-label="変換の例">
+        <path filter="url(#rough)" d="M2 10 H32" stroke="#3B3B3B" stroke-width="2.4" stroke-linecap="round"/>
+        <path filter="url(#rough)" d="M24 4 L34 10 L24 16" fill="none" stroke="#3B3B3B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="after">「長く会えていない人が手を尽くせば会える、諦めなくていいということを伝えたい」という形にすると審査が通ります</div>
+    </div>
+
+    <p>薬機法・景表法・医療法にあたる表現や、「唯一」「画期的」「100%」といった言い切りすぎる表現も指摘の対象になります。申請後の差し戻しはほとんどの案件で起こり、指摘の数に心が折れてしまう方も少なくありません。</p>
+
+    <p class="callout">ここが山下の出番です。表現の言い換えや差し戻しへの対応は、基本サポートの中でご相談いただけます。</p>
+  </section>
+
+  <section id="return">
+    <h2>リターンの考え方</h2>
+    <p>自分の利益だけでリターンを組むと、支援者にとってメリットのないものばかりになってしまいます。応援したいだけの人と、見返りが欲しい人の両方がいるので、どちらにも用意しておくとよいと思います。</p>
+
+    <div class="pair-grid">
+      <div class="pair-card"><strong>ただ応援したい人</strong>気持ちに応えるリターンを用意します。</div>
+      <div class="pair-card"><strong>見返りが欲しい人</strong>魅力を感じてもらえる商品・体験を用意します。</div>
+    </div>
+
+    <p>山下自身のクラウドファンディングでは、知り合いのアーティスト作品・セミナー・商品をリターンにしました。提供してくださった方には原価で出していただき、セミナーの提供者には0円で受講者のリストを受け取る形にしていただきました。支援してくれた人はその商品に魅力を感じている人なので、提供者にとっても見込み客になりました。</p>
+  </section>
+
+  <section id="reality">
+    <h2>集まり方の本当のところ</h2>
+    <p>クラウドファンディングを始める前に、正直にお伝えしたいことがあります。</p>
+    <p>支援を集めるのは、案件を立ち上げる本人です。山下の友人知人が動くことはありません。「知らない人がどんどん支援してくれる」と思われがちですが、実際はそうなりません。身内から一歩外まで、どれだけ必死に伝えられるかにかかっています。</p>
+
+    <div class="stat-strip">
+      <span class="stat-chip">毎日SNSに投稿</span>
+      <span class="stat-chip">1人あたりDM約1,000件</span>
+      <span class="stat-chip">準備期間2〜3か月</span>
+    </div>
+
+    <p>山下自身も、クラウドファンディングの間は毎日SNSに投稿し（一文でも必ず）、運営2人でそれぞれ1,000件ほどDMを送りました。講演会も本も、知らない人がいきなり来たり買ったりすることはありません。だからこそ、公開前のファン集め・仲間集めが必要になります。</p>
+    <p>クラウドファンディングの準備期間（やると決めてから終わるまでの2〜3か月）は、この土作りの期間でもあります。</p>
+  </section>
+
+  <section id="two-forms">
+    <h2>協業の2つのかたち</h2>
+    <p>協業には、山下が裏方に徹する形と、エンドユーザー（協業先のお客様）の前に出る形の2つがあります。相談サポートの範囲では山下は裏方に徹します。審査対応のアドバイスやリターンの壁打ちに進んだら、どちらにするかを案件ごとに選べます。</p>
+
+    <figure>
+      <svg viewBox="0 0 360 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="協業の2つのかたちの図">
+        <defs>
+          <marker id="arrowHead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#6F6A5F"/>
+          </marker>
+        </defs>
+
+        <!-- 上段：裏方 -->
+        <text x="180" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#3B3B3B">裏方に徹する形</text>
+
+        <rect filter="url(#rough)" x="40" y="40" width="280" height="44" rx="8" fill="#FEF1E3" stroke="#E7C416"/>
+        <text x="180" y="67" text-anchor="middle" font-size="14" fill="#3B3B3B">エンドユーザー</text>
+
+        <line filter="url(#rough)" x1="180" y1="84" x2="180" y2="134" stroke="#6F6A5F" stroke-width="1.6" stroke-linecap="round" marker-start="url(#arrowHead)" marker-end="url(#arrowHead)"/>
+        <text x="196" y="113" font-size="11.5" fill="#6F6A5F">やり取り</text>
+
+        <rect filter="url(#rough)" x="40" y="134" width="280" height="44" rx="8" fill="#FEF1E3" stroke="#E7C416"/>
+        <text x="180" y="161" text-anchor="middle" font-size="14" fill="#3B3B3B">協業先</text>
+
+        <line filter="url(#rough)" x1="180" y1="178" x2="180" y2="228" stroke="#6F6A5F" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="4 4" marker-start="url(#arrowHead)" marker-end="url(#arrowHead)"/>
+        <text x="196" y="207" font-size="11.5" fill="#6F6A5F">裏で相談</text>
+
+        <rect filter="url(#rough)" x="40" y="228" width="280" height="44" rx="8" fill="#FAFAFA" stroke="#6F6A5F"/>
+        <text x="180" y="255" text-anchor="middle" font-size="14" fill="#3B3B3B">山下（裏方）</text>
+
+        <line x1="20" y1="292" x2="340" y2="292" stroke="#E6E6E6" stroke-width="1"/>
+
+        <!-- 下段：前に出る -->
+        <text x="180" y="334" text-anchor="middle" font-size="15" font-weight="700" fill="#3B3B3B">前に出る形</text>
+
+        <rect filter="url(#rough)" x="40" y="350" width="280" height="44" rx="8" fill="#FEF1E3" stroke="#E7C416"/>
+        <text x="180" y="377" text-anchor="middle" font-size="14" fill="#3B3B3B">エンドユーザー</text>
+
+        <line filter="url(#rough)" x1="180" y1="394" x2="180" y2="444" stroke="#6F6A5F" stroke-width="1.6" stroke-linecap="round" marker-start="url(#arrowHead)" marker-end="url(#arrowHead)"/>
+        <text x="196" y="423" font-size="11.5" fill="#6F6A5F">直接やり取り</text>
+
+        <rect filter="url(#rough)" x="40" y="444" width="280" height="44" rx="8" fill="#FAFAFA" stroke="#6F6A5F"/>
+        <text x="180" y="471" text-anchor="middle" font-size="14" fill="#3B3B3B">山下</text>
+
+        <line filter="url(#rough)" x1="180" y1="488" x2="180" y2="538" stroke="#6F6A5F" stroke-width="1.6" stroke-linecap="round" marker-start="url(#arrowHead)" marker-end="url(#arrowHead)"/>
+        <text x="196" y="517" font-size="11.5" fill="#6F6A5F">相談</text>
+
+        <rect filter="url(#rough)" x="40" y="538" width="280" height="44" rx="8" fill="#FEF1E3" stroke="#E7C416"/>
+        <text x="180" y="565" text-anchor="middle" font-size="14" fill="#3B3B3B">協業先</text>
+      </svg>
+      <figcaption>図1：協業の2つのかたち。相談サポートの範囲では上の「裏方に徹する形」のみ。審査対応のアドバイスやリターンの壁打ちに進んだら、案件ごとにどちらかを選べます。</figcaption>
+    </figure>
+  </section>
+
+  <section id="plans">
+    <h2>0円の範囲とオプション</h2>
+    <div class="table-wrap">
+      <table>
+        <tr>
+          <th></th>
+          <th>相談サポート</th>
+          <th>基本サポート</th>
+          <th>オプション</th>
+        </tr>
+        <tr>
+          <td>協業先の費用</td>
+          <td>0円</td>
+          <td>0円</td>
+          <td>別途費用</td>
+        </tr>
+        <tr>
+          <td>受けられること</td>
+          <td>初回オンライン相談・LINEでの質問</td>
+          <td>審査対応のアドバイス・リターンの壁打ち・LINEでの通話相談</td>
+          <td>本文の添削・テキスト文書の納品・テキストページの納品・サムネイルデザイン・リターン設定・ディレクション</td>
+        </tr>
+        <tr>
+          <td>エンドユーザーの前に出るか</td>
+          <td>出ません（裏方のみ）</td>
+          <td>案件ごとに選べます</td>
+          <td>案件ごとに選べます</td>
+        </tr>
+        <tr>
+          <td>費用を支払う人</td>
+          <td>－</td>
+          <td>－</td>
+          <td>協業先／エンドユーザー<br>（案件ごとに選べます）</td>
+        </tr>
+      </table>
+    </div>
+    <p class="note">オプションが必要になったときだけ、別途費用でご案内します。</p>
+    <p class="note">
+      料金はこちらでご確認いただけます。<br>
+      料金シミュレーター：<a href="https://nekonote.help/#priceSimulator" target="_blank" rel="noopener">https://nekonote.help/#priceSimulator</a>
+    </p>
+  </section>
+
+  <section id="condition">
+    <h2>0円サポートの条件</h2>
+    <p>0円でご案内できるのは、相談サポート（初回オンライン相談・LINEでの質問）と、基本サポート（審査対応のアドバイス・リターンの壁打ち）です。本文の添削・テキスト文書やページの納品・サムネイルデザインなどのオプションは、別途費用でのご案内になります。</p>
+    <ol class="cond-list">
+      <li><strong>CAMPFIREへ申請する前に</strong>、山下へ連絡してください（協業先にお願いすることは連絡だけです）</li>
+      <li>山下が案件をCAMPFIREで紐付けます（手続きは山下が進めます）</li>
+      <li>相談サポートの範囲では、山下はエンドユーザーの前に出ず、協業先の裏方としてやり取りします。審査対応やリターンの壁打ちに進んだら、前に出るか裏方でいるかを案件ごとに選べます</li>
+      <li><strong>申請が済んだ案件はサポートをお受けできません。</strong>紐付けが申請前にしかできず、成功報酬をいただいていないためです。0円でも有料でも同じです</li>
+    </ol>
+  </section>
+
+  <section id="why-free">
+    <h2>なぜ0円でできるのか</h2>
+    <p>山下はCAMPFIRE公式キュレーションパートナーです。案件が紐付いていると、エンドユーザーがCAMPFIREへ支払う手数料17%の一部が、パートナー報酬として山下に入ります。そのため、協業先からもエンドユーザーからも、相談サポートと基本サポートの費用をいただかずに成り立ちます。</p>
+
+    <figure>
+      <svg viewBox="0 0 360 350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="0円でも成り立つ理由の図">
+        <defs>
+          <marker id="arrowHead2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M0,0 L10,5 L0,10 z" fill="#6F6A5F"/>
+          </marker>
+        </defs>
+
+        <rect filter="url(#rough)" x="40" y="20" width="280" height="44" rx="8" fill="#FEF1E3" stroke="#E7C416"/>
+        <text x="180" y="47" text-anchor="middle" font-size="14" fill="#3B3B3B">支援者</text>
+
+        <line filter="url(#rough)" x1="180" y1="64" x2="180" y2="118" stroke="#6F6A5F" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrowHead2)"/>
+        <text x="196" y="95" font-size="11.5" fill="#6F6A5F">支援金</text>
+
+        <rect filter="url(#rough)" x="40" y="118" width="280" height="44" rx="8" fill="#FAFAFA" stroke="#6F6A5F"/>
+        <text x="180" y="145" text-anchor="middle" font-size="14" fill="#3B3B3B">CAMPFIRE</text>
+
+        <line filter="url(#rough)" x1="180" y1="162" x2="180" y2="224" stroke="#6F6A5F" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrowHead2)"/>
+        <text x="196" y="186" font-size="11" fill="#6F6A5F">手数料17%の</text>
+        <text x="196" y="200" font-size="11" fill="#6F6A5F">一部</text>
+
+        <rect filter="url(#rough)" x="40" y="224" width="280" height="54" rx="8" fill="#FEF1E3" stroke="#E7C416"/>
+        <text x="180" y="248" text-anchor="middle" font-size="14" fill="#3B3B3B">山下</text>
+        <text x="180" y="266" text-anchor="middle" font-size="11.5" fill="#6F6A5F">パートナー報酬</text>
+
+        <text x="180" y="308" text-anchor="middle" font-size="11.5" fill="#3B3B3B">協業先がご自身の料金をどう決めるかに、</text>
+        <text x="180" y="326" text-anchor="middle" font-size="11.5" fill="#3B3B3B">山下は関与しません</text>
+      </svg>
+      <figcaption>図2：0円でも成り立つ理由（支援金の流れ）</figcaption>
+    </figure>
+  </section>
+
+  <section id="billing">
+    <h2>エンドユーザーへの請求について</h2>
+    <p>協業先がご自身の料金をどう決めるかに、山下は関与しません。</p>
+  </section>
+
+  <section id="proposal">
+    <h2>案件が見えたら企画案をお作りします</h2>
+    <p>案件が見えた段階で、その方に向けた企画案をお作りします。</p>
+
+    <div class="chip-row">
+      <span class="chip">タイトル</span>
+      <span class="chip">ストーリーの切り口</span>
+      <span class="chip">リターン案</span>
+      <span class="chip">目標金額</span>
+      <span class="chip">スケジュール</span>
+    </div>
+
+    <ul class="check-list">
+      <li>
+        <svg class="check-icon" viewBox="0 0 24 24" role="img" aria-label="対応済み">
+          <path filter="url(#rough)" d="M4 13 L10 19 L20 5" fill="none" stroke="#3B3B3B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>CAMPFIREで似た内容のプロジェクトを調べ、実際に支援が集まったリターンを根拠にして組みます。</span>
+      </li>
+      <li>
+        <svg class="check-icon" viewBox="0 0 24 24" role="img" aria-label="対応済み">
+          <path filter="url(#rough)" d="M4 13 L10 19 L20 5" fill="none" stroke="#3B3B3B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>面談の前に企画案をお渡しすると、話を始める時点ですでに期待を持っていただけます。</span>
+      </li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <h2>山下について</h2>
+
+    <div class="profile">
+      <img class="portrait" src="images/yamashita.jpg" alt="山下美樹">
+      <div class="profile-note">
+        <ul>
+          <li>CAMPFIRE公式キュレーションパートナー</li>
+          <li>クラウドファンディングプロデュースチームでのディレクター経験</li>
+          <li>2023年、CAMPFIRE本社にて表彰</li>
+          <li>成功報酬はいただいていません</li>
+        </ul>
+      </div>
+      <img class="award-photo" src="images/campfire_award.jpg" alt="2023年CAMPFIRE本社にて表彰されたときの様子">
+      <p class="award-caption">2023年、CAMPFIRE本社にて表彰</p>
+    </div>
+
+    <div class="stat-cards">
+      <div class="stat-card">450件以上のクラウドファンディングに携わってきました</div>
+      <div class="stat-card">支援総額は3億円を超えています</div>
+      <div class="stat-card">自身のクラウドファンディングでは130万円・支援者256人・目標の200%を超える支援を集めました</div>
+    </div>
+
+    <p class="note">
+      もう少し詳しく知りたい方は、こちらもご覧ください。<br>
+      ネコノテのサービス全体：<a href="https://nekonote.help/" target="_blank" rel="noopener">https://nekonote.help/</a><br>
+      サポート実績のまとめ：<a href="https://note.com/chiby_smile/m/m2809bd426e70" target="_blank" rel="noopener">https://note.com/chiby_smile/m/m2809bd426e70</a>
+    </p>
+  </section>
+
+  <section id="voice">
+    <h2>利用者の声</h2>
+
+    <div class="voice-block">
+      <h3>呉羽株式会社「呉羽キャンディ」</h3>
+      <div class="voice-meta">目標500,000円 → 746,900円（149%）<br><a href="https://camp-fire.jp/projects/view/667599" target="_blank" rel="noopener">https://camp-fire.jp/projects/view/667599</a></div>
+      <div class="quote">資金調達はお蔭様で約150％達成で終了しました。それ以上に、クラウドファンディングに挑戦した事で、沢山の方から問い合わせを頂き、メディアにも取り上げられ、地方から全国まで認知されるキッカケとなりました！（代表取締役 角裕太さま）</div>
+    </div>
+
+    <div class="voice-block">
+      <h3>五色電機株式会社「ケブラッチョ」</h3>
+      <div class="voice-meta">目標1,000,000円 → 873,300円<br><a href="https://camp-fire.jp/projects/view/586246" target="_blank" rel="noopener">https://camp-fire.jp/projects/view/586246</a></div>
+      <p>差し戻しを乗り越えて公開まで進んだ案件です。</p>
+    </div>
+
+    <p class="note">もっと見る：<a href="https://nekonote.help/#voice" target="_blank" rel="noopener">https://nekonote.help/#voice</a></p>
+  </section>
+
+  <section id="scope">
+    <h2>できること・できないこと</h2>
+    <div class="table-wrap">
+      <table>
+        <tr>
+          <th>できること</th>
+          <th>できないこと・条件</th>
+        </tr>
+        <tr>
+          <td>審査の表現チェック（薬機法・景表法・医療法など）</td>
+          <td>対応しているプラットフォームはCAMPFIREのみです</td>
+        </tr>
+        <tr>
+          <td>差し戻し対応（CAMPFIRE公式キュレーションパートナーとして追加情報をもらえることがあります）</td>
+          <td>集客の代行や支援額の保証はしません。発信内容のアドバイスまでです</td>
+        </tr>
+        <tr>
+          <td>リターン設計のアイデア出し</td>
+          <td>審査の可否はCAMPFIRE側が決めるため、掲載を保証することはできません</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>オプションの料金は前金です。掲載不可・起案者都合の中止・完成後のキャンセルでは返金がありません</td>
+        </tr>
+      </table>
+    </div>
+    <p class="callout">どのサポートも、<strong>CAMPFIREへ申請する前に</strong>ご連絡いただいた案件が対象です。申請が済んだあとは紐付けができないため、お受けできません。</p>
+  </section>
+
+  <section id="flow">
+    <h2>進め方</h2>
+    <ol class="steps">
+      <li><strong>CAMPFIREへ申請する前に</strong>、山下へ連絡します（LINE公式アカウント）</li>
+      <li>CAMPFIREでの紐付けを進めます（手続きは山下が行います）</li>
+      <li>サポート内容を相談します（0円の範囲のままか、オプションを追加するか）</li>
+      <li>審査対応やリターン設計など、案件の進行をサポートします</li>
+    </ol>
+  </section>
+
+  <section id="faq">
+    <h2>よくあるご質問</h2>
+
+    <div class="qa">
+      <div class="q">Q. 顧客を取られませんか。</div>
+      <p>相談サポートの範囲では、山下はエンドユーザーの前に出ない裏方の形です。審査対応やリターンの壁打ちに進んでも、前に出るかどうかは案件ごとに選べるので、山下が勝手にエンドユーザーとやり取りして関係を横取りすることはありません。</p>
+    </div>
+
+    <div class="qa">
+      <div class="q">Q. 0円で何か裏がありませんか。</div>
+      <p>CAMPFIRE公式キュレーションパートナーとして、支援額の手数料17%の一部がパートナー報酬として入る仕組みがあります。この仕組みがあるので、協業先からもエンドユーザーからも相談料をいただかずに成り立ちます。</p>
+    </div>
+
+    <div class="qa">
+      <div class="q">Q. 直接依頼すると相談サポート33,000円・基本サポート55,000円かかるのに、協業だと0円なのは不公平ではありませんか。</div>
+      <p>直接ご依頼いただく場合は、相談サポートに33,000円、基本サポートに55,000円をいただいています。協業のときに0円にできるのは、CAMPFIRE公式キュレーションパートナーとして支援額の手数料の一部がパートナー報酬として入ることと、協業先が窓口を持つぶん山下の工数が少なくなることの2つの理由からです。</p>
+    </div>
+
+    <div class="qa">
+      <div class="q">Q. CAMPFIRE以外は使えませんか。</div>
+      <p>対応しているプラットフォームはCAMPFIREのみです。他のプラットフォームの案件には対応できません。</p>
+    </div>
+
+    <div class="qa">
+      <div class="q">Q. 途中からオプションを追加できますか。</div>
+      <p>オプションは案件ごとに選べるので、必要になったタイミングでご相談いただけます。</p>
+    </div>
+
+    <div class="qa">
+      <div class="q">Q. エンドユーザーに山下の存在を伝えずに進められますか。</div>
+      <p>相談サポートの範囲では、山下がエンドユーザーとやり取りすることはありません。審査対応やリターンの壁打ちで前に出る形を選んだ場合は、エンドユーザーとやり取りが発生します。</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>お問い合わせ</h2>
+    <p>案件が出たら、CAMPFIREへ申請する前にひと言ご連絡ください。申請が済んだあとではお力になれません。</p>
+    <a class="cta" href="https://line.me/R/ti/p/@972pjcmz" target="_blank" rel="noopener">LINE公式アカウントで連絡する</a>
+  </section>
+
+  <footer>
+    ネコノテ／CAMPFIRE公式キュレーションパートナー
+  </footer>
+</div>
+</body>
+</html>
