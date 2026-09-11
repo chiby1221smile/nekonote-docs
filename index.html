@@ -331,10 +331,40 @@
     margin:16px 0 8px;
   }
   .case-card{
+    display:block;
+    color:var(--text);
+    text-decoration:none;
     background:var(--cream);
     border-radius:16px 20px 18px 22px / 20px 16px 22px 18px;
     padding:16px 18px;
     box-shadow:2px 3px 0 rgba(59,59,59,0.08);
+  }
+  .case-thumb{
+    width:100%;
+    height:auto;
+    border-radius:10px;
+    display:block;
+    margin:0 0 12px;
+  }
+  .case-figs{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:baseline;
+    gap:4px 12px;
+    margin:2px 0 8px;
+  }
+  .case-figs b{
+    font-size:1.25rem;
+  }
+  .case-figs span{
+    font-size:0.85rem;
+    color:var(--gray);
+  }
+  .case-link{
+    display:inline-block;
+    font-size:0.85rem;
+    font-weight:700;
+    border-bottom:2px solid var(--yellow);
   }
   .case-card:nth-child(even){ transform:rotate(0.4deg); }
   .case-card:nth-child(odd){ transform:rotate(-0.4deg); }
@@ -603,34 +633,51 @@
     <h2>実際にあった案件</h2>
 
     <div class="case-grid">
-      <div class="case-card">
-        <span class="badge">149%・認知が広がった声</span>
-        <h3>呉羽キャンディ</h3>
-        <p>目標500,000円に対し746,900円（149%）。「地方から全国まで認知されるキッカケになりました」という声をいただきました。</p>
-      </div>
+      <a class="case-card" href="https://camp-fire.jp/projects/view/667599" target="_blank" rel="noopener">
+        <img class="case-thumb" src="images/case_kureha.jpg" alt="呉羽キャンディのプロジェクトページ">
+        <span class="badge">149%達成</span>
+        <h3>ミニトマト「呉羽キャンディ」を広めたい</h3>
+        <div class="case-figs"><b>746,900円</b><span>目標 500,000円</span></div>
+        <p>「沢山の方から問い合わせを頂き、メディアにも取り上げられ、地方から全国まで認知されるキッカケとなりました」という声をいただきました。</p>
+        <span class="case-link">CAMPFIREのページを見る</span>
+      </a>
 
-      <div class="case-card">
-        <span class="badge">130万円・256人</span>
-        <h3>山下自身のレンタルスペース</h3>
-        <p>家賃だけが出ていく状態から、3か月分の家賃を目標に実施しました。130万円・支援者256人・目標の200%を超える支援が集まりました。</p>
-      </div>
+      <a class="case-card" href="https://camp-fire.jp/projects/view/586246" target="_blank" rel="noopener">
+        <img class="case-thumb" src="images/case_kevraccio.jpg" alt="ケブラッチョのプロジェクトページ">
+        <span class="badge">差し戻しを乗り越えた案件</span>
+        <h3>電線とネジの新感覚ブロック「ケブラッチョ」</h3>
+        <div class="case-figs"><b>873,300円</b><span>目標 1,000,000円</span></div>
+        <p>制御盤をつくる会社から生まれたブロックです。リターンのつくり方と、審査に通る書き方をご相談いただきました。</p>
+        <span class="case-link">CAMPFIREのページを見る</span>
+      </a>
+
+      <a class="case-card" href="https://camp-fire.jp/projects/357909/view" target="_blank" rel="noopener">
+        <img class="case-thumb" src="images/case_kuromon.png" alt="黒門カルチャーファクトリーのプロジェクトページ">
+        <span class="badge">217%達成・山下自身の案件</span>
+        <h3>大人の秘密基地を存続させたい（黒門カルチャーファクトリー）</h3>
+        <div class="case-figs"><b>1,304,000円</b><span>目標 600,000円</span><span>支援者 256人</span></div>
+        <p>大阪・日本橋の地下にあるレンタルスペースです。コロナ禍で利用の予約が入らなくなり、家賃だけが出ていく状態になりました。3か月分の家賃を目標に、この場所を続けたいと呼びかけた案件です。リターンは知り合いの作品やセミナーばかりでしたが、256人が支援してくださいました。</p>
+        <span class="case-link">CAMPFIREのページを見る</span>
+      </a>
     </div>
   </section>
 
   <section id="screening">
     <h2>審査で止まるところ</h2>
-    <p>クラウドファンディングには審査があります。自己の利益のためだけの内容は、通りにくいことがあります。結果として自分の利益になる内容でも、<span class="mark">世の中への影響を言葉にできれば</span>審査は通ります。</p>
+    <p>クラウドファンディングには審査があります。同じ企画でも、<span class="mark">書き方ひとつで止まってしまうこと</span>があります。よくあるのは、その方だけのためのお願いに見えてしまう書き方です。</p>
 
     <div class="transform-box">
-      <div class="before">「行き別れたお母さんに会いたい」だけでは通りにくい内容も</div>
+      <div class="before">「自分のお店を出したいので、開店の資金を集めたい」</div>
       <svg class="arrow-icon" viewBox="0 0 40 20" role="img" aria-label="変換の例">
         <path filter="url(#rough)" d="M2 10 H32" stroke="#3B3B3B" stroke-width="2.4" stroke-linecap="round"/>
         <path filter="url(#rough)" d="M24 4 L34 10 L24 16" fill="none" stroke="#3B3B3B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-      <div class="after">「長く会えていない人が手を尽くせば会える、諦めなくていいということを伝えたい」という形にすると審査が通ります</div>
+      <div class="after">「この街には、子ども連れで気兼ねなく過ごせる場所がありません。誰でも立ち寄れる店をつくりたい」</div>
     </div>
 
-    <p>薬機法・景表法・医療法にあたる表現や、「唯一」「画期的」「100%」といった言い切りすぎる表現も指摘の対象になります。申請後の差し戻しはほとんどの案件で起こり、指摘の数に心が折れてしまう方も少なくありません。</p>
+    <p>言い換えたのは見せ方だけで、その方がもともと持っている思いは変えていません。どこを前に出すかという話です。</p>
+
+    <p>ほかにも、薬機法・景表法・医療法にあたる表現や、「唯一」「画期的」「100%」といった言い切りすぎる表現も指摘の対象になります。申請後の差し戻しはほとんどの案件で起こり、指摘の数に心が折れてしまう方も少なくありません。</p>
 
     <p class="callout">ここが山下の出番です。表現の言い換えや差し戻しへの対応は、基本サポートの中でご相談いただけます。</p>
   </section>
@@ -873,15 +920,8 @@
     <h2>利用者の声</h2>
 
     <div class="voice-block">
-      <h3>呉羽株式会社「呉羽キャンディ」</h3>
-      <div class="voice-meta">目標500,000円 → 746,900円（149%）<br><a href="https://camp-fire.jp/projects/view/667599" target="_blank" rel="noopener">https://camp-fire.jp/projects/view/667599</a></div>
+      <h3>呉羽株式会社さま（呉羽キャンディ）</h3>
       <div class="quote">資金調達はお蔭様で約150％達成で終了しました。それ以上に、クラウドファンディングに挑戦した事で、沢山の方から問い合わせを頂き、メディアにも取り上げられ、地方から全国まで認知されるキッカケとなりました！（代表取締役 角裕太さま）</div>
-    </div>
-
-    <div class="voice-block">
-      <h3>五色電機株式会社「ケブラッチョ」</h3>
-      <div class="voice-meta">目標1,000,000円 → 873,300円<br><a href="https://camp-fire.jp/projects/view/586246" target="_blank" rel="noopener">https://camp-fire.jp/projects/view/586246</a></div>
-      <p>差し戻しを乗り越えて公開まで進んだ案件です。</p>
     </div>
 
     <p class="note">もっと見る：<a href="https://nekonote.help/#voice" target="_blank" rel="noopener">https://nekonote.help/#voice</a></p>
